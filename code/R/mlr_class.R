@@ -32,4 +32,4 @@ pred_raster_rf <- predict(object = rfModel, newdata = r_df) # create the classif
 pred_raster <- r[[1]] # create the output raster
 pred_raster[] <- pred_raster_rf$data$response # set the values to the output raster
 plot(pred_raster) # plot the final classification raster
-writeRaster(pred_raster, "~/Documents/curso_rf/output_class.tif", options = "COMPRESS=DEFLATE") # Save the output raster as .tif
+writeRaster(pred_raster, "~/Documents/curso_rf/output_class.tif") # Save the output raster as .tif
