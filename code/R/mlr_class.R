@@ -28,7 +28,7 @@ filtered_task <- mlr::filterFeatures(rTask, method = "FSelectorRcpp_information.
 # Raster Classification ---------------------------------------------------
 in_raster <- stack("Documents/curso_rf/mosaic.tif")
 in_raster <- in_raster[[c(2,3,4,5,6,7)]]
-names(in_raster) <- c("B2", "B3", "B4", "B5", "B6", "B7")
+# names(in_raster) <- c("B2", "B3", "B4", "B5", "B6", "B7")
 r_df <- as.data.frame(as.matrix(in_raster)) # transform the raster in data.frame
 r_df$value <- 0 # add and extra column with all zeros 
 pred_raster_rf <- predict(object = rfModel, newdata = r_df) # create the classification
