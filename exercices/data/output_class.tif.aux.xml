@@ -1,0 +1,11 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <CategoryNames>
+      <Category></Category>
+      <Category>0</Category>
+      <Category>1</Category>
+      <Category>2</Category>
+      <Category>3</Category>
+    </CategoryNames>
+  </PAMRasterBand>
+</PAMDataset>
